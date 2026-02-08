@@ -1,0 +1,65 @@
+[gd_scene load_steps=4 format=3 uid="uid://cf1far4xbuy5g"]
+
+[ext_resource type="Script" uid="uid://dwxwd3chpi1r7" path="res://scripts/screencontent.gd" id="1_iwv85"]
+[ext_resource type="Shader" uid="uid://cyoogpyiw41sl" path="res://assets/crt.gdshader" id="2_co25s"]
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_co25s"]
+shader = ExtResource("2_co25s")
+shader_parameter/curvature = 4.0
+shader_parameter/vignette_color = Color(0, 0, 0, 1)
+shader_parameter/chromatic_aberration = 0.005
+shader_parameter/vignette_darkness = 0.5
+shader_parameter/scanline_count = 50.0
+shader_parameter/scanline_opacity = 0.4
+shader_parameter/scanline_roll_speed = 0.5
+shader_parameter/noise_strength = 0.05
+shader_parameter/flicker_speed = 5.0
+shader_parameter/flicker_intensity = 0.02
+
+[node name="Control" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_iwv85")
+
+[node name="ColorRect" type="ColorRect" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="CRTFilter" type="ColorRect" parent="."]
+material = SubResource("ShaderMaterial_co25s")
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+
+[node name="HBoxContainer" type="HBoxContainer" parent="."]
+layout_mode = 0
+offset_left = 105.0
+offset_top = 128.0
+offset_right = 961.0
+offset_bottom = 446.0
+alignment = 1
+
+[node name="LevelImage" type="TextureRect" parent="HBoxContainer"]
+texture_filter = 1
+layout_mode = 2
+
+[node name="LabelPrompt" type="Label" parent="."]
+layout_mode = 0
+offset_left = 426.0
+offset_top = 445.0
+offset_right = 629.0
+offset_bottom = 500.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 40

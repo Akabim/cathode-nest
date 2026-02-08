@@ -1,0 +1,12 @@
+[gd_resource type="Resource" script_class="LevelData" load_steps=3 format=3 uid="uid://bc8wbajbf2q7m"]
+
+[ext_resource type="Texture2D" uid="uid://bs2r5aq7i8hc0" path="res://assets/mirror_32.png" id="1_71jia"]
+[ext_resource type="Script" uid="uid://b2emt1txxuh5p" path="res://scripts/leveldata.gd" id="1_as6yx"]
+
+[resource]
+script = ExtResource("1_as6yx")
+level_id = 6
+prompt_text = "WHAT DO YOU SEE?"
+level_image = ExtResource("1_71jia")
+correct_buttons = Array[int]([2])
+metadata/_custom_type_script = "uid://b2emt1txxuh5p"

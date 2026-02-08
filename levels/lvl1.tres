@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="LevelData" load_steps=3 format=3 uid="uid://bptjvawgv88as"]
+
+[ext_resource type="Script" uid="uid://b2emt1txxuh5p" path="res://scripts/leveldata.gd" id="1_567vi"]
+[ext_resource type="Texture2D" uid="uid://cf3n0k568q8ia" path="res://assets/3apel.png" id="1_uj3n3"]
+
+[resource]
+script = ExtResource("1_567vi")
+prompt_text = "COUNT"
+level_image = ExtResource("1_uj3n3")
+correct_buttons = Array[int]([3])
+metadata/_custom_type_script = "uid://b2emt1txxuh5p"

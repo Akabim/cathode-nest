@@ -1,0 +1,28 @@
+[gd_scene load_steps=2 format=3 uid="uid://khadpygvxuk5"]
+
+[ext_resource type="Texture2D" uid="uid://cayibj0lndrdh" path="res://assets/apple_red.png" id="1_fnd4m"]
+
+[node name="ScreenViewport" type="SubViewport"]
+
+[node name="ScreenUI" type="Control" parent="."]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="ColorRect" type="ColorRect" parent="ScreenUI"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="TextureRect" type="TextureRect" parent="ScreenUI"]
+texture_filter = 1
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+texture = ExtResource("1_fnd4m")

@@ -1,0 +1,12 @@
+[gd_resource type="Resource" script_class="LevelData" load_steps=3 format=3 uid="uid://daunkxr6pd816"]
+
+[ext_resource type="Texture2D" uid="uid://bi8ttpgaqf2sd" path="res://assets/duck_32.png" id="1_8xjuc"]
+[ext_resource type="Script" uid="uid://b2emt1txxuh5p" path="res://scripts/leveldata.gd" id="1_85fd5"]
+
+[resource]
+script = ExtResource("1_85fd5")
+level_id = 2
+prompt_text = "WHAT NUMBERS?"
+level_image = ExtResource("1_8xjuc")
+correct_buttons = Array[int]([2])
+metadata/_custom_type_script = "uid://b2emt1txxuh5p"

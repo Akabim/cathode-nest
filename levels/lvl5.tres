@@ -1,0 +1,12 @@
+[gd_resource type="Resource" script_class="LevelData" load_steps=3 format=3 uid="uid://dm81wvgmmj6mu"]
+
+[ext_resource type="Texture2D" uid="uid://sfvuv8xpiunr" path="res://assets/loading_bar_32.png" id="1_4p86y"]
+[ext_resource type="Script" uid="uid://b2emt1txxuh5p" path="res://scripts/leveldata.gd" id="1_cjaaf"]
+
+[resource]
+script = ExtResource("1_cjaaf")
+level_id = 5
+prompt_text = "FINISH IT"
+level_image = ExtResource("1_4p86y")
+correct_buttons = Array[int]([1])
+metadata/_custom_type_script = "uid://b2emt1txxuh5p"

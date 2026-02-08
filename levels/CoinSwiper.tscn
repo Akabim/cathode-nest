@@ -1,0 +1,28 @@
+[gd_scene load_steps=3 format=3 uid="uid://bujyb6cciya8v"]
+
+[ext_resource type="Script" uid="uid://b0kbg4r1m5hgu" path="res://scripts/coin_swiper.gd" id="1_decb1"]
+[ext_resource type="Texture2D" uid="uid://c5w31jv6nrkfy" path="res://assets/—Pngtree—glossy golden coin icon_5986301.png" id="1_reqq4"]
+
+[node name="CoinSwiper" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_decb1")
+
+[node name="CoinSprite" type="TextureRect" parent="."]
+layout_mode = 1
+anchors_preset = 12
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -960.0
+offset_top = -2020.0
+offset_right = 960.0
+offset_bottom = 980.0
+grow_horizontal = 2
+grow_vertical = 0
+scale = Vector2(0.30256668, 0.30256668)
+texture = ExtResource("1_reqq4")

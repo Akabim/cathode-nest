@@ -1,0 +1,12 @@
+[gd_resource type="Resource" script_class="LevelData" load_steps=3 format=3 uid="uid://bx0rb8nlfq6tp"]
+
+[ext_resource type="Texture2D" uid="uid://c6hh7e3o70t5d" path="res://assets/lalat_32.png" id="1_7ss0m"]
+[ext_resource type="Script" uid="uid://b2emt1txxuh5p" path="res://scripts/leveldata.gd" id="1_qgatr"]
+
+[resource]
+script = ExtResource("1_qgatr")
+level_id = 3
+prompt_text = "SMASH!"
+level_image = ExtResource("1_7ss0m")
+correct_buttons = Array[int]([3])
+metadata/_custom_type_script = "uid://b2emt1txxuh5p"

@@ -1,0 +1,14 @@
+[gd_resource type="Resource" script_class="LevelData" load_steps=4 format=3 uid="uid://bkwv1xxkmt3e0"]
+
+[ext_resource type="Texture2D" uid="uid://cs5pd5bf4p15" path="res://assets/snake_lurus_32.png" id="1_3x700"]
+[ext_resource type="Script" uid="uid://b2emt1txxuh5p" path="res://scripts/leveldata.gd" id="1_xk3k2"]
+[ext_resource type="Texture2D" uid="uid://bq4pdm3rugb5d" path="res://assets/snake_belok_32.png" id="2_0lu2a"]
+
+[resource]
+script = ExtResource("1_xk3k2")
+level_id = 4
+prompt_text = "TURN LEFT!"
+level_image = ExtResource("1_3x700")
+level_image_alt = ExtResource("2_0lu2a")
+correct_buttons = Array[int]([4])
+metadata/_custom_type_script = "uid://b2emt1txxuh5p"
